@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7">
+  <![endif]-->
+  <!--[if IE 7]>         
+  <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8">
+    <![endif]-->
+    <!--[if IE 8]>         
+    <html lang="en" ng-app="myApp" class="no-js lt-ie9">
+      <![endif]-->
+      <!--[if gt IE 8]><!--> 
+      <html lang="en" ng-app="myApp" class="no-js">
+        <!--<![endif]-->
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>My AngularJS App</title>
+          <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="bower_components/foundation/css/normalize.css" rel="stylesheet" media="screen">
+          <link href="bower_components/foundation/css/foundation.css" rel="stylesheet" media="screen">
+          <link href="bower_components/foundation-icons/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" rel="stylesheet" media="screen">
+          <link href="bower_components/foundation-icons/foundation_icons_social/stylesheets/social_foundicons.css" rel="stylesheet" media="screen">
+          <link href="bower_components/foundation-icons/foundation_icons_general/stylesheets/general_foundicons.css" rel="stylesheet" media="screen">
+          <link href="./bower_components/fontawesome/css/font-awesome.css" rel="stylesheet">
+
+          <link rel="stylesheet" href="app.css">
+          <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+        </head>
+        <body>
+          <!-- Top Bar -->
+          <nav class="top-bar large-9 columns" data-topbar role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">Kielan Lemons</a></h1>
+              </li>
+              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="has-form">
+                  <div class="row collapse">
+                    <div class="large-9 small-9 columns">
+                      <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="large-3 small-3 columns">
+                      <a href="#" class="alert button expand">Search</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </nav>
+          <!-- End Top Bar -->
+          <!-- Content -->
+          <div class="row">
+          <div class="large-8 columns" style="border-style:solid;">
+          <div style="text-align: center;">
+            <h1>Most Recent</h1>
+          </div>
+          <ul>
+            <li><a ui-sref="view1">view1</a></li>
+            <li><a ui-sref="view2">view2</a></li>
+          </ul>
+          <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+          <div ui-view></div>
+          <div>Angular seed app kielan version: v<span app-version></span></div>
+          <!-- In production use:
+            <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+            -->
+          </div>
+          <!--sidebar-->
+          <div class="large-4 large-push-3 columns" style="border-style:solid;">
+            <p>Objectivism: an imaginary foundation built from subjectivism and stardust.</p>
+            <a href="https://github.com/Kielan"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"style="position:relative;padding:10px;"></i></a>
+            <a href="https://github.com/Kielan"><i class="fa fa-github-square fa-5x" aria-hidden="true"style="position:relative;padding:10px;"></i></a>
+            <a href="https://github.com/Kielan"><i class="fa fa-angellist fa-5x" aria-hidden="true"style="position:relative;padding:10px;"></i></a>
+          </div>
+          </div>
+          <!-- End Content -->
+          <script src="bower_components/angular/angular.js"></script>
+          <script src="bower_components/angular-route/angular-route.js"></script>
+          <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+          <script src="app.js"></script>
+          <script src="view1/view1.js"></script>
+          <script src="view2/view2.js"></script>
+          <script src="view3/view3.js"
+          <script src="components/version/version.js"></script>
+          <script src="components/version/version-directive.js"></script>
+          <script src="components/version/interpolate-filter.js"></script>
+          <script src="bower_components/foundation/js/foundation.js"></script>
+        </body>
+      </html>
