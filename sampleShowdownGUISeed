@@ -1,0 +1,29 @@
+
+
+<div class="row">
+<div class="large-9 columns">
+<form>
+  <i class="fa fa-bold fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-italic fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-link fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-quote-left fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-code fa-2x" aria-hidden="true" style="position:relative;padding:7x;"></i>
+  <i class="fa fa-image fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-head fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-align-left fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-align-center fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+  <i class="fa fa-align-right fa-2x" aria-hidden="true" style="position:relative;padding:7px;"></i>
+
+  <textarea id="inputPane"></textarea>
+
+ <div id="processingTime" title="Last processing time">0 ms</div>
+ 
+  <div id="previewPane"></div>
+
+  <h3>Tags</h3>
+  <input type="text" placeholder="tags">
+  <p>someicons</p>
+  <a href="#" class="button radius">Post Your Post</a>
+</form>
+</div>
+</div>
